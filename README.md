@@ -1,85 +1,35 @@
- Hotel Reservation System
+Hotel Reservation System
 
- Overview
-
-This system is a Hotel Reservation Management System that allows Admins, Staff, and Customers (Users) to manage hotel room bookings efficiently. It implements a multi-level verification and approval system where reservations must be verified by both Staff and Admin before being fully approved.  
-
-
- User Roles
-
-1. Admin
-   -The Admin has final approval authority over reservations.
-    Admin credentials:
-      Email: admin@gmail.com
-      Password: admin
-    Admin can approve, cancel, or mark reservations as unavailable.
-    Admins are recognized as ID = 1.
-
-2. Staff
-    Staff verifies and checks reservations to ensure no conflicts.
-    Staff credentials:
-      Email: staff@gmail.com
-      Password: staff
-    Staff can approve or cancel customer reservations.
-    Staff are recognized as ID = 2.
-
-3. Customers (Users)
-    Users can sign up, fill in their information, and book hotel rooms.
-    Users can view, update, or delete their reservations.
-    Reservations by customers start as PENDING and require verification by Staff and Admin.
-    User IDs start from 3 and up.
+Group Members
+1. Amaro Johnly
+2. Benitez Raymon
+3. Cabanag Anale
+4. Gonzalez Maria Nica
+5. Quiroquiro Khiven
 
 
- Reservation Workflow
+This System requires signups for ADMIN, STAFF, and THE USERS or CUSTOMERS, In the signup form, the system Validates and Analyze who is logging in,  The System Recognizes The ADMIN as id number 1. The STAFF as id number 2, and the USERS are the ids numbers 3 and up.     
 
-1. Customer Reservation
-   The customer fills out a form with their information.
-   Selects room(s) for booking.
-   Reservations are saved as PENDING.
+A user has a fillup form for the users information, after that, the user can now select rooms for their reservations, and later can view their reservation details, and can also VIEW, UPDATE, and DELETE their reservations. and that reservation are now PENDING waiting for the STAFFs Verification. The STAFFs and The ADMIN had already a copy with that reservations.
 
-2. Staff Verification
-    Staff can view all customer reservations.
-    Checks for conflicts or double bookings.
-    Staff can Approve or Cancel reservations.
-    Customers are notified about the Staff’s action.
-    Admin receives notifications about Staff’s actions.
+In STAFFs Page the STAFF can View ALL reservations of all Customers, and now the STAFF can Validate if there are no conflicts or bookings, after verifying bookings, The STAFF can now APPROVE or CANCEL the reservation. After the STAFFs validation now the information are notified to the ADMINS page. Also the CUSTOMERS are notified by the STAFFS verification.
 
-3. Admin Final Approval
-    Admin views reservations verified by Staff.
-    Can Approve, Cancel, or mark reservations as Unavailable.
-    Both Admin and Staff approvals are required for a reservation to be considered fully approved.
-    Staff and Customers are notified about the Admin’s decision.
+ (THE OFFICIAL STAFF RECORDED IS )
+EMAIL: staff@gmail.com
+PASSWORD: staff
 
+In The ADMINs page, the admin are the ones who finally decide if that reservation are APPROVED or CANCEL or UNAVAILABLE at that moment. The STAFF and CUSTOMERS are get notified by the ADMINS approval. 
 
-Notifications
+(THE OFFICIAL ADMIN RECORDED IS)
+EMAIL: admin@gmail.com
+PASSWORD: admin
 
-   Notifications are sent to relevant users whenever:
-   Staff approves or cancels a reservation.
-   Admin approves, cancels, or marks a reservation as unavailable.
+now the reservation of a CUSTOMER can be APPROVED or CANCELED by STAFFS and ADMIN.
+the RESERVATION in not complete approved if not BOTH the ADMIN and STAFFS approved the reservation.
 
- Important Notes
+System Requirements
 
- Reservation Statuses:
-   Pending → Awaiting Staff verification.
-   Approved by Staff → Verified by Staff, awaiting Admin approval.
-   Approved → Fully approved by both Staff and Admin.
-   Cancelled → Cancelled by Staff or Admin.
-   Unavailable → Marked by Admin as unavailable.
-
-
- Group Members
-
- Amaro, Johnly  
- Benitez, Raymon  
- Cabanag, Anale  
- Gonzalez, Maria Nica  
- Quiroquiro, Khiven  
-
-
- System Requirements
-
- PHP 7.4+  
- MySQL Database  
- Web Server (e.g., XAMPP, WAMP)  
- Modern Web Browser  
-
+- PHP 7.4+  
+- MySQL Database  
+- Web Server (e.g., XAMPP, WAMP)  
+- Modern Web Browser  
